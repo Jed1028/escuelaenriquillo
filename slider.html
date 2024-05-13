@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="slider-container">
+        <div class="slider position"></div>
+    </div>
+
+
+    <style>
+        .position{
+            margin-top: 300px;
+            transform: translate(-50%, -50%);
+        }
+
+        .slider{
+            background-image: url(img/slider1.jpeg);
+            background-size: cover;
+            height: 50px;
+            width: 50px;
+            border-radius: 10px;
+            animation: animate 10s infinite;
+        }
+
+        @keyframes animate {
+            20%{
+                background-image: url(img/slider1.jpeg);
+                background-size: cover;
+            }
+            40%{
+                background-image: url(img/home.png);
+                background-size: cover;
+            }
+            60%{
+                background-image: url(img/slider2.jpeg);
+                background-size: cover;
+            }
+            80%{
+                background-image: url(img/home.png);
+                background-size: cover;
+            }
+            100%{
+                background-image: url(img/slider3.jpeg);
+                background-size: cover;
+            }
+            
+
+            
+        }
+    </style>
+</body>
+</html>
